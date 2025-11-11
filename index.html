@@ -4,14 +4,85 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Linked</title>
+         <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+          body{
+            background-image: url("../images/black.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #f5e6ca;
+
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .left, .right {
+            flex: 1 1 400px; /* Each column takes about half */
+            max-width: 600px;
+        }
+        iframe {
+            width: 100%;
+            height: 340px;
+            border: none;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
     </head>
     <body>
         <h1>Odin Recipes
         </h1>
-        <img src="images/bc.jpg " width="250px" height="250px" alt="Butter Chicken"> </src>
-        <br>
-        
-        <a href="recipes/Butter_Chicken.html">Butter Chicken Recipe</a>
+        <div class="container">
+            <div class="left">
+                <iframe
+                src="https://www.youtube.com/embed/PkGxPhGdqyE"
+                title="Youtube Player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in
+                picture; web-share"
+                allowfullscreen>
+                </iframe>
+            </div>
+            <div class="right">
+
+        <ol>
+            <li>
+                <a href="Coffee-/coffeeshop.html">Coffee<br> <img src="images/coffee.jpg" width=""250px" height="250px" alt="Coffee"></src></a><br>
+                </li>
+            
+            <li> 
+                 <a href="recipes/Butter_Chicken.html">Butter Chicken Recipe  <br>
+                <img src="images/bc.jpg " width="250px" height="250px" alt="Butter Chicken"> </src></a>
+            </li>
+            
+        </ol>
+ </div>
+    </div>
 
     </body>
 </html>
